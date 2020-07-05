@@ -16,7 +16,7 @@ public class inspector {
 		test.print();
 		
 		System.out.println ("a + b = " + test.sumAB());
-		System.out.println ("большее значание из a, b это " + test.maxAB());
+		System.out.println ("Большее значание из a, b это " + test.maxAB());
 		
 	}
 

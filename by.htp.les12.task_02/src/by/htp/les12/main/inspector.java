@@ -6,6 +6,7 @@ package by.htp.les12.main;
 public class inspector {
 
 	public static void main(String[] args) {
+		
 		Test2 test_a = new Test2();
 		System.out.println ("test_a поле a " + test_a.getA());
 		System.out.println ("test_a поле b " + test_a.getB());

@@ -24,6 +24,7 @@ public class Test1 {
 		int sum = this.a + this.b;
 		return sum;
 	}
+	
 	public int maxAB () {
 		if (this.a > this.b) {
 			return this.a;
