@@ -6,7 +6,7 @@ public class Student {
 	private String name;
 	private String lastname;
 	private int groupNumber;
-	private int[]usp = new int[5];
+	private int[]usp;
 
 	public Student (String name, String lastname, int groupNumber, int[]usp) {
 		this.name = name;

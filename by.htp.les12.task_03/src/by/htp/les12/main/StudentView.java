@@ -5,7 +5,7 @@ package by.htp.les12.main;
 public class StudentView {
 
 	public void printStudentLastnameGroupNumber(Student s) {
-		System.out.println(s.getName() + " " + s.getLastname() + " " + s.getGroupNumber());
+		System.out.println(s.getName() + " " + s.getLastname() + " [" + s.getGroupNumber() + "]");
 	}
 	
 	public void printAllStudents (Student[] s) {
