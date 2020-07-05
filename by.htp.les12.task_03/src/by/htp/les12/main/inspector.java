@@ -9,10 +9,10 @@ public class inspector {
 		Student[]s = new Student[5];
 		
 		s[0] = new Student("Иван", "Петров", 1, new int[]{4,5,6,7,8});
-		s[1] = new Student("Василий", "Иванов", 2, new int[]{9,10,9,10,9});
+		s[1] = new Student("Василий", "Иванов", 2, new int[]{9,10,9,10,9,10});
 		s[2] = new Student("Петя", "Петров", 1, new int[]{4,5,6,7,8});
 		s[3] = new Student("Надя", "Иванова", 2, new int[]{9,10,9,10,9});
-		s[4] = new Student("Иван", "Сидоров", 1, new int[]{9,10,8,10,9});
+		s[4] = new Student("Иван", "Сидоров", 1, new int[]{9,10,});
 	
 	StudentView a = new StudentView();
 	
