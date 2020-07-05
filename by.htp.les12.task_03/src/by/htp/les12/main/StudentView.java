@@ -4,7 +4,14 @@ package by.htp.les12.main;
 //Добавьте возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 9 или 10.
 public class StudentView {
 
-	public void printStudentNameLastnameGroupNumber(Student s) {
+	public void printStudentLastnameGroupNumber(Student s) {
 		System.out.println(s.getName() + " " + s.getLastname() + " " + s.getGroupNumber());
 	}
+	
+	public void printAllStudents (Student[] s) {
+		for (Student i : s ) {
+			printStudentLastnameGroupNumber(i);
+		}
+	}
 }
+

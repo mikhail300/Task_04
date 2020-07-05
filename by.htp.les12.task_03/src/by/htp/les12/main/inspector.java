@@ -15,10 +15,15 @@ public class inspector {
 		s[4] = new Student("Иван", "Сидоров", 1, new int[]{9,10,8,10,9});
 	
 	StudentView a = new StudentView();
-	a.printStudentNameLastnameGroupNumber(s[1]);
 	
+	a.printStudentLastnameGroupNumber(s[1]);
+	System.out.println();
 	
+	a.printAllStudents(s);
+	System.out.println();
 	
+	StudentLogic b = new StudentLogic();
+	a.printAllStudents(b.allAStudents(s));
 	}
 	
 	
