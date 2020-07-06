@@ -60,7 +60,7 @@ public class FractionLogic {
 	
 	private void reduceFraction(Fraction f) {// private void reduceFraction(Fraction this)
 		int nod;
-		int max;
+		
 
 		if (Math.abs(f.getNumerator()) < Math.abs(f.getDenominator())) {
 			nod = Math.abs(f.getNumerator());
