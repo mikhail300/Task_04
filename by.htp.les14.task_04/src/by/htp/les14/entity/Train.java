@@ -5,7 +5,7 @@ import java.util.Calendar;
 public class Train {
 	private String destinationStation;
 	private int number;
-	private Calendar calendar;
+	private Calendar calendar ;
 	
 	public Train () {
 		
