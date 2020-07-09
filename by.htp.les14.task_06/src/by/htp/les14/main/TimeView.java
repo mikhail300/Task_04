@@ -2,6 +2,6 @@ package by.htp.les14.main;
 
 public class TimeView {
 	public void printTime (Time time) {
-		System.out.println (time.getHour() + "час. " + time.getMinute() + "мин. " + time.getSecond() + "сек. ");
+		System.out.println (time.getHour() + "С‡Р°СЃ. " + time.getMinute() + "РјРёРЅ. " + time.getSecond() + "СЃРµРє. ");
 	}
 }
