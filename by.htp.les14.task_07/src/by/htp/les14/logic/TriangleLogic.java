@@ -1,14 +1,21 @@
 package by.htp.les14.logic;
 
+import by.htp.les14.enity.Point;
 import by.htp.les14.enity.Triangle;
 
 public class TriangleLogic {
-
-	public int perimeter(Triangle triangle) {
-		int perimeter = triangle.getA() + triangle.getB() + triangle.getC();
+	public double perimeter(Triangle triangle) {
+		double perimeter = distanceBetween2Points(triangle.getA(),triangle.getB()) + distanceBetween2Points(triangle.getB(),triangle.getC()) + distanceBetween2Points(triangle.getC(),triangle.getA());
 		return perimeter;
 	}
 
+	private static double distanceBetween2Points(Point point0, Point point1) {
+		double distance;
+		distance = Math.sqrt(Math.pow(point1.getX() - point0.getX(), 2) + Math.pow(point1.getY() - point0.getY(), 2));
+		return distance;
+	}
+	
+	
 	public double square(Triangle triangle) {
 		double a = (double) triangle.getA();
 		double b = (double) triangle.getB();

@@ -1,27 +1,27 @@
 package by.htp.les14.enity;
 
 public class Point {
-	private int x;
-	private int y;
+	private double x;
+	private double y;
 	
-	public Point (int x, int y) {
+	public Point (double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
 
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 
-	public void setX(int x) {
+	public void setX(double x) {
 		this.x = x;
 	}
 
-	public int getY() {
+	public double getY() {
 		return y;
 	}
 
-	public void setY(int y) {
+	public void setY(double y) {
 		this.y = y;
 	}
 
@@ -29,8 +29,11 @@ public class Point {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + x;
-		result = prime * result + y;
+		long temp;
+		temp = Double.doubleToLongBits(x);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(y);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
@@ -43,11 +46,12 @@ public class Point {
 		if (getClass() != obj.getClass())
 			return false;
 		Point other = (Point) obj;
-		if (x != other.x)
+		if (Double.doubleToLongBits(x) != Double.doubleToLongBits(other.x))
 			return false;
-		if (y != other.y)
+		if (Double.doubleToLongBits(y) != Double.doubleToLongBits(other.y))
 			return false;
 		return true;
 	}
+
 	
 }
