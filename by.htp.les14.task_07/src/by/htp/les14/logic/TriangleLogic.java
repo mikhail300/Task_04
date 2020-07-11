@@ -20,10 +20,25 @@ public class TriangleLogic {
 		double a = distanceBetween2Points(triangle.getA(),triangle.getB());
 		double b = distanceBetween2Points(triangle.getB(),triangle.getC());
 		double c = distanceBetween2Points(triangle.getC(),triangle.getA());
+		//System.out.println (a);
+		//System.out.println (b);
+		//System.out.println (c);
 		double p = (a + b + c) / 2.0;
-		double sqare = Math.sqrt(a * (p - a) * (p - b) * (p - c));
+		double sqare = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 		return sqare;
 	}
 	
-	
+	public Point intersectionOfMedians(Triangle triangle) {
+		
+		
+		double x, y;
+
+		x = (triangle.getA().getX() + triangle.getB().getX() + triangle.getC().getX()) / 3.0;
+		y = (triangle.getA().getY() + triangle.getB().getY() + triangle.getC().getY()) / 3.0;
+		//System.out.printf("Медианы пересекаются в точке (%2.2f , %2.2f).", x, y);
+		//System.out.println (b);
+		//System.out.println (c);
+		Point point = new Point(x, y);
+		return point;
+}
 }
