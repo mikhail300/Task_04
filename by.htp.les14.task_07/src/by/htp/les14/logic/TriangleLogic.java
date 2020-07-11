@@ -17,9 +17,9 @@ public class TriangleLogic {
 	
 	
 	public double square(Triangle triangle) {
-		double a = (double) triangle.getA();
-		double b = (double) triangle.getB();
-		double c = (double) triangle.getC();
+		double a = distanceBetween2Points(triangle.getA(),triangle.getB());
+		double b = distanceBetween2Points(triangle.getB(),triangle.getC());
+		double c = distanceBetween2Points(triangle.getC(),triangle.getA());
 		double p = (a + b + c) / 2.0;
 		double sqare = Math.sqrt(a * (p - a) * (p - b) * (p - c));
 		return sqare;
