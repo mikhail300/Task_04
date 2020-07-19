@@ -39,10 +39,10 @@ public class Main {
 	view.print("Найденый поезд по номеру", logic.findByNumber(depo.getTrains(), 2));
 	System.out.println();
 	
-	view.print("Отсортированы по убыванию названия пункта назначения поезда", logic.sortByDestinationStationASC(depo.getTrains()));
+	view.print("Отсортированы по A-z названия пункта назначения поезда", logic.sortByDestinationStationASC(depo.getTrains()));
 	System.out.println();
 	
-	view.print("Отсортированы по убыванию названия пункта назначения поезда", logic.sortByDestinationStationDESC(depo.getTrains()));
+	view.print("Отсортированы по z-A названия пункта назначения поезда", logic.sortByDestinationStationDESC(depo.getTrains()));
 	System.out.println();
 	
 	view.print("Отсортированы по пункту назначения А-я, поезда с одинаковыми пунктами назначения упорядочены по возрастанию времени отправления",
